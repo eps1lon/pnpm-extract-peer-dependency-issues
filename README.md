@@ -10,6 +10,8 @@ We'd have to parse the default output for ` WARN  Issues with peer dependenc
 
 `pnpm --strict-peer-dependencies true` is not suitable since it ignores `pnpm.peerDependencyRules`.
 
+## Actual behavior
+
 ```bash
 $ pnpm install --resolution-only
  WARN  Issues with peer dependencies found
@@ -79,3 +81,7 @@ $
 ...
 
 ```
+
+## Expected
+
+`--reporter ndjson` considers `pnpm.peerDependencyRules`
