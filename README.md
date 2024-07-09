@@ -21,7 +21,7 @@ $ pnpm install --resolution-only
 └─┬ ts-node 10.9.2
   └── ✕ missing peer @types/node@"*"
 
-$
+$ pnpm install --resolution-only  --reporter ndjson
 ...
 {
   "time": 1720535261322,
